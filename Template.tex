@@ -1,0 +1,29 @@
+%\documentclass[UTF-8]{ctexart}
+\documentclass[UTF-8]{MyTemplate}
+\usepackage[sort]{gbt7714}
+
+\begin{document}
+\title{Template}
+\author{author}
+\date{\today}
+\maketitle
+%\bibliographystyle{unsrt} 
+\bibliographystyle{gbt7714-numerical}
+
+\begin{equation}
+	\left\{
+		\begin{aligned}
+			\label{eq:demo}
+			F_{total} &= F_0 \sum_{k}^{\infty} \frac{1}{6k+1} g(k) \cos[(6k+1)p\omega_r t -(6k+1)p\theta]\\
+			F_0 &= \frac{6 \sqrt{2} N I}{\pi p}\\
+			g(k) &= \sin \frac{(6k+1)\pi}{2} \sin \frac{(6k+1)\pi}{6}
+		\end{aligned}
+	\right.
+\end{equation}
+
+
+
+\newpage
+\bibliography{reference}
+\end{document}
+
