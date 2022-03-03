@@ -32,11 +32,23 @@
 \RequirePackage{graphicx} 
 \RequirePackage{subfig}
 \RequirePackage{fancybox}
-\RequirePackage{color}
+%xcolor is more flexible than color
+%\RequirePackage{color} 
 \RequirePackage{xcolor}
 \RequirePackage{hyperref}
 \RequirePackage{listings}
 \RequirePackage{geometry}
+\RequirePackage{tikz}
+
+
+
+%==========================================================================================
+% TikZ
+%==========================================================================================
+% TikZ Library
+\usetikzlibrary{intersections}
+
+
 
 
 %==========================================================================================
