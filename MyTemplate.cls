@@ -27,7 +27,8 @@
 %==========================================================================================
 % Packages
 %==========================================================================================
-\RequirePackage{metalogo,mflogo,amsmath,bm}
+\RequirePackage{metalogo,mflogo,amsmath,amssymb,mathrsfs}
+\RequirePackage{bm}
 \RequirePackage{array}
 \RequirePackage{graphicx} 
 \RequirePackage{subfig}
@@ -39,7 +40,6 @@
 \RequirePackage{listings}
 \RequirePackage{geometry}
 \RequirePackage{tikz}
-
 
 
 %==========================================================================================
