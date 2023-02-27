@@ -18,7 +18,7 @@
 \ProvidesClass{MyTemplate}[2021/05/28 My Template cls]
 
 % load default article class
-\LoadClass[a4paper,UTF-8]{ctexart}
+\LoadClass[a4paper, fontset = windows]{ctexart}
 
 
 
