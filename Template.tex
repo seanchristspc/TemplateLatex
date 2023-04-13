@@ -1,15 +1,22 @@
+%!TEX program = xelatex
 %\documentclass[UTF-8]{ctexart}
-\documentclass[UTF-8]{MyTemplate}
+\documentclass{MyTemplate}
 \usepackage[sort]{gbt7714}
+% 如果希望使用 \ctexset 在导言区指定字库，则需要先在宏包/文档
+% 类选项中指定fontset = none, 设置如下
+%\documentclass[fontset = none]{ctexart}
+%\ctexset{fontset=windows}
 
 \begin{document}
-\title{Template}
+\title{Template CN}
 \author{author}
 \date{\today}
 \maketitle
 %\bibliographystyle{unsrt} 
 \bibliographystyle{gbt7714-numerical}
+中文模板
 
+\section{公式案例}
 \begin{equation}
 	\left\{
 		\begin{aligned}
@@ -21,7 +28,70 @@
 	\right.
 \end{equation}
 
-模板文件
+\begin{equation}
+	\bm{u} = \bm{R} \bm{i} + \bm{p} \bm{\psi}
+\end{equation}
+
+
+\begin{equation}
+	\bm{T_{dq}} \bm{u} =\bm{T_{dq}} \bm{R} \bm{T_{dq}^{-1}}
+\bm{T_{dq}}  \bm{i} + \bm{T_{dq}} \bm{p} \bm{\psi} 
+\end{equation}
+
+\begin{equation}
+	\bm{T_{dq}} \bm{u} =\bm{T_{dq}} \bm{R} \bm{T_{dq}^{-1}}
+	\bm{T_{dq}}  \bm{i} + \bm{T_{dq}} [\bm{p} \bm{L} \bm{i} + \bm{p} \bm{\psi_m}]
+\end{equation}
+
+
+\begin{equation}
+	\bm{T_{dq}} \bm{u} =\bm{T_{dq}} \bm{R} \bm{T_{dq}^{-1}}
+	\bm{T_{dq}}  \bm{i} + \bm{T_{dq}} \bm{p} \bm{L} \bm{i} + \bm{T_{dq}} 
+	\bm{p} \bm{\psi_m}
+\end{equation}
+
+
+\begin{equation}
+	\bm{T_{dq}} \bm{u} =\bm{T_{dq}} \bm{R} \bm{T_{dq}^{-1}}
+	\bm{T_{dq}}  \bm{i} + \bm{T_{dq}} \frac{\bm{L} \bm{i}}{dt} + \bm{T_{dq}} 
+	\frac{\bm{\psi_m}}{dt} 
+\end{equation}
+
+
+\begin{equation}
+	\bm{T_{dq}} \bm{u} =\bm{T_{dq}} \bm{R} \bm{T_{dq}^{-1}}
+	\bm{T_{dq}}  \bm{i} + \bm{T_{dq}} 
+	\frac{\bm{L} \bm{T_{dq}^{-1}} \bm{T_{dq}}\bm{i}}{dt} + 
+	\bm{T_{dq}} \frac{\bm{\psi_m}}{dt} 
+\end{equation}
+
+
+
+\begin{equation}
+	(\bm{T_{dq}} \bm{u}) =(\bm{T_{dq}} \bm{R} \bm{T_{dq}^{-1}})
+	(\bm{T_{dq}}  \bm{i}) + \bm{T_{dq}} 
+	\frac{\bm{L} \bm{T_{dq}^{-1}} (\bm{T_{dq}}\bm{i})}{dt} + 
+	\bm{T_{dq}} \frac{\bm{\psi_m}}{dt} 
+\end{equation}
+
+
+\begin{equation}
+	\bm{u_{dq}} =\bm{R}\bm{i_{dq}} + \bm{T_{dq}} \bm{L}
+	\frac{\bm{T_{dq}^{-1}} \bm{i_{dq}}}{dt} + 
+	\bm{T_{dq}} \frac{\bm{\psi_m}}{dt} 
+\end{equation}
+
+
+\begin{equation}
+	\bm{u_{dq}} =\bm{R}\bm{i_{dq}} + 
+	\bm{T_{dq}}\bm{L}\frac{\bm{T_{dq}^{-1}}}{dt} \bm{i_{dq}} + 
+	\bm{T_{dq}} \bm{L} \bm{T_{dq}^{-1}} \frac{\bm{i_{dq}}}{dt} + 
+	\bm{T_{dq}} \frac{\bm{\psi_m}}{dt} 
+\end{equation}
+
+
+
+\section{数学花体字}
 $\mathcal{R}$
 
 $\mathbb{R}$
@@ -30,7 +100,13 @@ $\mathscr{R}$
 
 $\mathfrak{R}$
 
+
 \newpage
 \bibliography{reference}
+
+\appendix
+
+\section{附录}
+
 \end{document}
 

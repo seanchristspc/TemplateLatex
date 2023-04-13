@@ -18,7 +18,7 @@
 \ProvidesClass{MyTemplate}[2021/05/28 My Template cls]
 
 % load default article class
-\LoadClass[a4paper, fontset = windows]{ctexart}
+\LoadClass[a4paper, UTF8, fontset = fandol]{ctexart}
 
 
 
